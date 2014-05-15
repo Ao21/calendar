@@ -1,7 +1,7 @@
   console.log('\'Allo \'Allo!');
 
 
-  var xml = '<?xml version="1.0" encoding="utf-8" ?><entries><entry><uosName>Honours Studio</uosName><AlphaDigit>MARF5201</AlphaDigit><start_day>7/3/2014</start_day><end_day>6/6/2014</end_day><start_time>9:00</start_time><end_time>11:00</end_time><frequency>Weekly</frequency><day_of_week>FRI</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Honours Studio</uosName><AlphaDigit>MARF5201</AlphaDigit><start_day>7/3/2014</start_day><end_day>6/6/2014</end_day><start_time>11:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>FRI</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Honours Studio</uosName><AlphaDigit>MARF5201</AlphaDigit><start_day>1/8/2014</start_day><end_day>31/10/2014</end_day><start_time>11:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>FRI</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Urban Architecture Research Studio</uosName><AlphaDigit>MARC4001</AlphaDigit><start_day>6/3/2014</start_day><end_day>5/6/2014</end_day><start_time>13:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>THU</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Urban Architecture Research Studio</uosName><AlphaDigit>MARC4001</AlphaDigit><start_day>6/3/2014</start_day><end_day>5/6/2014</end_day><start_time>9:00</start_time><end_time>13:00</end_time><frequency>Weekly                        </frequency><day_of_week>THU</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Urban Architecture Research Studio</uosName><AlphaDigit>MARC4001</AlphaDigit><start_day>31/7/2014</start_day><end_day>30/10/2014</end_day><start_time>13:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>THU</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Urban Architecture Research Studio</uosName><AlphaDigit>MARC4001</AlphaDigit><start_day>31/7/2014</start_day><end_day>30/10/2014</end_day><start_time>9:00</start_time><end_time>13:00</end_time><frequency>Weekly                        </frequency><day_of_week>THU</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Sustainable Architecture Research Studio</uosName><AlphaDigit>MARC4002</AlphaDigit><start_day>4/3/2014</start_day><end_day>3/6/2014</end_day><start_time>9:00</start_time><end_time>11:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Sustainable Architecture Research Studio</uosName><AlphaDigit>MARC4002</AlphaDigit><start_day>4/3/2014</start_day><end_day>3/6/2014</end_day><start_time>13:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Sustainable Architecture Research Studio</uosName><AlphaDigit>MARC4002</AlphaDigit><start_day>29/7/2014</start_day><end_day>28/10/2014</end_day><start_time>9:00</start_time><end_time>10:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Sustainable Architecture Research Studio</uosName><AlphaDigit>MARC4002</AlphaDigit><start_day>29/7/2014</start_day><end_day>28/10/2014</end_day><start_time>12:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Digital Architecture Research Studio</uosName><AlphaDigit>MARC4003</AlphaDigit><start_day>4/3/2014</start_day><end_day>3/6/2014</end_day><start_time>9:00</start_time><end_time>11:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Digital Architecture Research Studio</uosName><AlphaDigit>MARC4003</AlphaDigit><start_day>4/3/2014</start_day><end_day>3/6/2014</end_day><start_time>11:00</start_time><end_time>13:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Digital Architecture Research Studio</uosName><AlphaDigit>MARC4003</AlphaDigit><start_day>4/3/2014</start_day><end_day>3/6/2014</end_day><start_time>13:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Digital Architecture Research Studio</uosName><AlphaDigit>MARC4003</AlphaDigit><start_day>29/7/2014</start_day><end_day>28/10/2014</end_day><start_time>9:00</start_time><end_time>10:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Digital Architecture Research Studio</uosName><AlphaDigit>MARC4003</AlphaDigit><start_day>29/7/2014</start_day><end_day>28/10/2014</end_day><start_time>12:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Digital Architecture Research Studio</uosName><AlphaDigit>MARC4003</AlphaDigit><start_day>29/7/2014</start_day><end_day>28/10/2014</end_day><start_time>11:00</start_time><end_time>12:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Graduation Studio</uosName><AlphaDigit>MARC5001</AlphaDigit><start_day>7/3/2014</start_day><end_day>6/6/2014</end_day><start_time>9:00</start_time><end_time>11:00</end_time><frequency>Weekly                        </frequency><day_of_week>FRI</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Graduation Studio</uosName><AlphaDigit>MARC5001</AlphaDigit><start_day>7/3/2014</start_day><end_day>6/6/2014</end_day><start_time>11:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>FRI</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Graduation Studio</uosName><AlphaDigit>MARC5001</AlphaDigit><start_day>1/8/2014</start_day><end_day>31/10/2014</end_day><start_time>9:00</start_time><end_time>11:00</end_time><frequency>Weekly                        </frequency><day_of_week>FRI</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Graduation Studio</uosName><AlphaDigit>MARC5001</AlphaDigit><start_day>1/8/2014</start_day><end_day>31/10/2014</end_day><start_time>11:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>FRI</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Advanced Technologies 2</uosName><AlphaDigit>MARC5101</AlphaDigit><start_day>28/7/2014</start_day><end_day>27/10/2014</end_day><start_time>11:00</start_time><end_time>12:00</end_time><frequency>Weekly                        </frequency><day_of_week>MON</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Advanced Technologies 2</uosName><AlphaDigit>MARC5101</AlphaDigit><start_day>28/7/2014</start_day><end_day>27/10/2014</end_day><start_time>12:00</start_time><end_time>13:00</end_time><frequency>Weekly                        </frequency><day_of_week>MON</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Advanced Technologies 2</uosName><AlphaDigit>MARC5101</AlphaDigit><start_day>28/7/2014</start_day><end_day>27/10/2014</end_day><start_time>13:00</start_time><end_time>14:00</end_time><frequency>Weekly                        </frequency><day_of_week>MON</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Modern Architectural Theory</uosName><AlphaDigit>MARC4102</AlphaDigit><start_day>30/7/2014</start_day><end_day>29/10/2014</end_day><start_time>11:30</start_time><end_time>13:00</end_time><frequency>Weekly                        </frequency><day_of_week>WED</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Modern Architectural Theory</uosName><AlphaDigit>MARC4102</AlphaDigit><start_day>30/7/2014</start_day><end_day>29/10/2014</end_day><start_time>13:00</start_time><end_time>14:30</end_time><frequency>Weekly                        </frequency><day_of_week>WED</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Modern Architectural Theory</uosName><AlphaDigit>MARC4102</AlphaDigit><start_day>30/7/2014</start_day><end_day>29/10/2014</end_day><start_time>14:30</start_time><end_time>16:00</end_time><frequency>Weekly                        </frequency><day_of_week>WED</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Modern Architectural History</uosName><AlphaDigit>MARC4201</AlphaDigit><start_day>5/3/2014</start_day><end_day>4/6/2014</end_day><start_time>13:00</start_time><end_time>14:00</end_time><frequency>Weekly                        </frequency><day_of_week>WED</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Modern Architectural History</uosName><AlphaDigit>MARC4201</AlphaDigit><start_day>5/3/2014</start_day><end_day>4/6/2014</end_day><start_time>14:00</start_time><end_time>15:00</end_time><frequency>Weekly                        </frequency><day_of_week>WED</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Contract Documentation</uosName><AlphaDigit>MARC5102</AlphaDigit><start_day>15/9/2014</start_day><end_day>27/10/2014</end_day><start_time>14:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>MON</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry><entry><uosName>Contract Documentation</uosName><AlphaDigit>MARC5102</AlphaDigit><start_day>28/7/2014</start_day><end_day>8/9/2014</end_day><start_time>16:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>MON</day_of_week><venue_name>Wilkinson 209 Studio                              </venue_name></entry></entries>'
+  var xml = '<?xml version="1.0" encoding="utf-8" ?><entries><entry><uosName>Graduation Studio</uosName><AlphaDigit>MARC5001</AlphaDigit><start_day>1/8/2014</start_day><end_day>31/10/2014</end_day><start_time>13:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>FRI</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Architecture Studio 101</uosName><AlphaDigit>BDES1010</AlphaDigit><start_day>4/3/2014</start_day><end_day>3/6/2014</end_day><start_time>11:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Art Workshop 1</uosName><AlphaDigit>BDES1024</AlphaDigit><start_day>4/3/2014</start_day><end_day>3/6/2014</end_day><start_time>11:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Architecture Studio 201</uosName><AlphaDigit>BDES2010</AlphaDigit><start_day>3/3/2014</start_day><end_day>2/6/2014</end_day><start_time>13:00</start_time><end_time>18:00</end_time><frequency>Weekly                        </frequency><day_of_week>MON</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Architecture Studio 202</uosName><AlphaDigit>BDES2020</AlphaDigit><start_day>28/7/2014</start_day><end_day>20/10/2014</end_day><start_time>13:00</start_time><end_time>17:30</end_time><frequency>Weekly                        </frequency><day_of_week>MON</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Architecture Studio 302</uosName><AlphaDigit>BDES3020</AlphaDigit><start_day>29/7/2014</start_day><end_day>28/10/2014</end_day><start_time>16:00</start_time><end_time>18:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Architectural Communications 3</uosName><AlphaDigit>BDES3012</AlphaDigit><start_day>29/7/2014</start_day><end_day>28/10/2014</end_day><start_time>16:00</start_time><end_time>18:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Art Workshop 2</uosName><AlphaDigit>BDES2024</AlphaDigit><start_day>29/7/2014</start_day><end_day>28/10/2014</end_day><start_time>10:00</start_time><end_time>13:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry></entries>'
   var json = $.xml2json(xml);
 
   var noEvent = true,
@@ -35,21 +35,35 @@
           sT = dayThisWeek.hours(sT[0]).minutes(sT[1]);
           eT = dayThisWeek2.hours(eT[0]).minutes(eT[1]);
 
+          var a = moment(sT),
+              b = moment(eT),
+              len = b.diff(a, 'hours');
 
 
-          xmlData.push({
-              uosName: result.uosName,
-              alphaDigit: result.AlphaDigit,
-              startDate: moment(result.start_day, "DDMMYYYY"),
-              endDate: moment(result.end_day, "DDMMYYYY"),
-              startTime: sT,
-              endTime: eT,
-              frequency: result.frequency,
-              venue: result.venue_name,
-              dayOfWeek: result.day_of_week,
-              computedDay: dayThisWeek,
-              range: moment().range(sT, eT)
-          });
+
+          var startDate = moment(result.start_day, "DDMMYYYY");
+          var endDate = moment(result.end_day, "DDMMYYYY");
+          var dateRange = moment().range(startDate, endDate);
+
+
+          if (dateRange.contains(thisweek)) {
+
+
+              xmlData.push({
+                  uosName: result.uosName,
+                  alphaDigit: result.AlphaDigit,
+                  startDate: moment(result.start_day, "DDMMYYYY"),
+                  endDate: moment(result.end_day, "DDMMYYYY"),
+                  startTime: sT,
+                  endTime: eT,
+                  length: len,
+                  frequency: result.frequency,
+                  venue: result.venue_name,
+                  dayOfWeek: result.day_of_week,
+                  computedDay: dayThisWeek,
+                  range: moment().range(sT, eT)
+              });
+          }
 
       };
       getEventsByDay(days[0]);
@@ -118,8 +132,8 @@
   function getEventsByDay(day) {
       var tempArray = [];
 
-      for (var i = 0; i < xmlData.length; i++) {
 
+      for (var i = 0; i < xmlData.length; i++) {
           if (xmlData[i].dayOfWeek === days[0]) {
               tempArray.push(xmlData[i]);
           }
@@ -138,87 +152,78 @@
   function createTimeLineForDay(day, events) {
 
 
-
+      console.log(events);
       var daySegments = 12,
           startTime = 9,
-          width = 0,
-          openBlock = false;
-      var segmentLength = 1680 / daySegments;
-      var timeLine = [];
+          curBlockNo = 0,
+          dayTimeLine = [];
 
       //Get Starting Time
       var thisweek = moment().startOf('week');
       var day = dayToDayNumber(day);
       var currentTime = thisweek.weekday(day);
+      currentTime.set('hours', 9);
       console.log(currentTime);
-      currentTime.add('hours', 9);
-
-      var lastUpdatedStartTime = currentTime;
+      var lastTime = currentTime;
 
       //Sort Events by Time
       events = events.sort(compareMilli);
 
-      var block = {};
-
-
 
       // Create Blocks
-      for (var i = 0; i < daySegments; i++) {
+      do {
+          var block = {}, currentEvent = null,
+              nextTime = 1;
+          block.starTime = currentTime.get('hours');
 
-          //Check if there is a block open or not
-          if (openBlock) {
+          //make last block the end time
+          if (daySegments != 12) {
+              var a = dayTimeLine[curBlockNo - 1];
+              a.endTime = currentTime.get('hours');
+          }
 
-              //If there's a block open
-
-              for (var x = 0; x < events.length; x++) {
-
-                  //Check to see if an event starts now
-
-                  if (currentTime.isSame(events[x].startTime)) {
-
-                      //Add the block to Array and set openblock to false
-
-                      //Create a new Event Block and add it to array
-
-                  }
+          for (var x = 0; x < events.length; x++) {
+              //Check to see if an event starts now
+              if (currentTime.isSame(events[x].startTime)) {
+                  currentEvent = events[x];
               }
+          }
+
+          if (currentEvent != null) {
+              block.ev = currentEvent;
+              nextTime = currentEvent.length;
+
           } else {
-
-              //if there isn't an open block
-
-              for (var x = 0; x < events.length; x++) {
-
-                  //check to see if there is an event on during now
-
-                  if (currentTime.within(events[x].range)) {}
-
-                  // If no event on and no open block
-                  else {
-                      //Create a new block and set open block to false
-                  }
-
-
-              }
+              nextTime = 1;
           }
 
 
           // Go Next Time
-          currentTime.add('hours', 1);
-          flag = noEvent;
+          currentTime.add('hours', nextTime);
+          curBlockNo = curBlockNo + 1;
+          daySegments = daySegments - nextTime
+          dayTimeLine.push(block);
+
+      }
+      while (daySegments > 0);
+      console.log(dayTimeLine);
+
+
+
+  }
+
+
+  function createHtmlForDay(dayTimeLine) {
+      var html = ""
+      for (var i = 0; i < dayTimeLine.length; i++) {
+          html += '<div class="block">'
+          //html += '<h1>'+dayTimeLine.currentTime.format('H ');+' to '+dayTimeLine.endTime
+          dayTimeLine[i]
       };
-
-
-  }
-
-  function endLastBlock(block) {
-
   }
 
 
 
-  function createBlock(width, startTime, endTime) {
-      //Create Block
-  }
 
 
   function compareMilli(a, b) {
