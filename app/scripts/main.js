@@ -135,11 +135,11 @@
 
 
       for (var i = 0; i < xmlData.length; i++) {
-          if (xmlData[i].dayOfWeek === days[1]) {
+          if (xmlData[i].dayOfWeek === days[0]) {
               tempArray.push(xmlData[i]);
           }
       };
-      createTimeLineForDay(days[1], tempArray);
+      createTimeLineForDay(days[0], tempArray);
   }
 
 
@@ -147,14 +147,14 @@
 
 
 
-
-  function createTimeLineForDay(day, events) {
-
+  function createTimeLineForDay(day, events, timeDurations) {
 
       console.log(events);
-      var daySegments = 24,
+      var segmentCount = 0,
+          daySegments = 144,
           startTime = 9,
           curBlockNo = 0,
+          eCount = 0,
           dayTimeLine = [];
 
       //Get Starting Time
@@ -162,55 +162,113 @@
       var day = dayToDayNumber(day);
       var currentTime = thisweek.weekday(day);
       currentTime.set('hours', 9);
-      console.log(currentTime);
       var lastTime = currentTime;
 
       //Sort Events by Time
       events = events.sort(compareMilli);
-
+      eventStarted = false;
 
       // Create Blocks
       do {
           var block = {}, currentEvent = null,
-              nextTime = 30;
-          block.starTime = currentTime.format('hh mm');
+              nextTime = 1;
 
-          //make last block the end time
-          if (daySegments != 24) {
-              var a = dayTimeLine[curBlockNo - 1];
-              a.endTime = currentTime.format('hh mm');
+          var addToSegment = 1;
+          var addToMinutes = 5;
+
+          var evs = isEventOnAtTime(currentTime);
+          //Check if event starts at this time
+          if (evs.length > 0) {
+              //Make an event and go to end of event
+              block.starTime = currentTime.format('h:mmA');
+              block.endTime = evs[0].endTime.format('h:mmA');
+              dayTimeLine.push(block);
+
+
+
+              //Go to the end of the event
+              addToSegment = (evs[0].length / 5);
+              addToMinutes = evs[0].length;
+
+              eventStarted = true;
+
+
+          } else {
+              //Create Empty block and skip to next Event Time (difference between next event block)
+              eventStarted = false;
+              //If there's no events left
+
+
           }
 
-          for (var x = 0; x < events.length; x++) {
-              //Check to see if an event starts now
-              if (currentTime.isSame(events[x].startTime)) {
-                  currentEvent = events[x];
+
+          if (!eventStarted) {
+
+              var nextEvent = getNextEvent(currentTime);
+
+              //if There's an event left
+              if (nextEvent) {
+                  block.starTime = currentTime.format('h:mmA');
+                  block.endTime = nextEvent.startTime.format('h:mmA');
+                  dayTimeLine.push(block);
+                  var difference = nextEvent.startTime.diff(currentTime, 'minutes');
+                  addToSegment = difference / 5;
+                  addToMinutes = difference;
+              } else {
+                  block.starTime = currentTime.format('h:mmA');
+                  block.endTime = moment(currentTime).set('hours', 21);
+
+                  dayTimeLine.push(block);
+                  segmentCount = segmentCount = daySegments;
               }
           }
 
-          if (currentEvent != null) {
-              block.ev = currentEvent;
-              nextTime = currentEvent.length;
 
-          } else {
-              nextTime = 30;
+
+
+
+
+
+          function isEventOnAtTime(time) {
+              var evArray = [];
+              for (var x = 0; x < events.length; x++) {
+                  //Check if event starts at this time
+                  if (currentTime.isSame(events[x].startTime)) {
+                      //Make an event and go to end of event
+                      evArray.push(events[x])
+
+                  } else {
+                      //Create Empty block and skip to next Event Time (difference between next event block)
+                  }
+              }
+              return evArray;
+
           }
 
 
-          // Go Next Time
-          currentTime.add('minutes', nextTime);
-          curBlockNo = curBlockNo + 1;
-          daySegments = daySegments - (nextTime / 30)
-          dayTimeLine.push(block);
+          function getNextEvent(ct) {
+              var eA = 0;
+              for (var i = events.length - 1; i >= 0; i--) {
+                  if (events[i].startTime.isAfter(currentTime)) {
+                      return events[i];
+                  }
+              }
+
+
+          }
+          segmentCount = segmentCount + addToSegment;
+          currentTime.add('minutes', addToMinutes);
 
       }
-      while (daySegments > 0);
+      while (segmentCount < daySegments);
       console.log(dayTimeLine);
 
 
 
-  }
 
+
+
+  }
 
 
 
