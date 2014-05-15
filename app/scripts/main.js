@@ -1,7 +1,8 @@
   console.log('\'Allo \'Allo!');
 
 
-  var xml = '<?xml version="1.0" encoding="utf-8" ?><entries><entry><uosName>Graduation Studio</uosName><AlphaDigit>MARC5001</AlphaDigit><start_day>1/8/2014</start_day><end_day>31/10/2014</end_day><start_time>13:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>FRI</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Architecture Studio 101</uosName><AlphaDigit>BDES1010</AlphaDigit><start_day>4/3/2014</start_day><end_day>3/6/2014</end_day><start_time>11:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Art Workshop 1</uosName><AlphaDigit>BDES1024</AlphaDigit><start_day>4/3/2014</start_day><end_day>3/6/2014</end_day><start_time>11:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Architecture Studio 201</uosName><AlphaDigit>BDES2010</AlphaDigit><start_day>3/3/2014</start_day><end_day>2/6/2014</end_day><start_time>13:00</start_time><end_time>18:00</end_time><frequency>Weekly                        </frequency><day_of_week>MON</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Architecture Studio 202</uosName><AlphaDigit>BDES2020</AlphaDigit><start_day>28/7/2014</start_day><end_day>20/10/2014</end_day><start_time>13:00</start_time><end_time>17:30</end_time><frequency>Weekly                        </frequency><day_of_week>MON</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Architecture Studio 302</uosName><AlphaDigit>BDES3020</AlphaDigit><start_day>29/7/2014</start_day><end_day>28/10/2014</end_day><start_time>16:00</start_time><end_time>18:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Architectural Communications 3</uosName><AlphaDigit>BDES3012</AlphaDigit><start_day>29/7/2014</start_day><end_day>28/10/2014</end_day><start_time>16:00</start_time><end_time>18:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Art Workshop 2</uosName><AlphaDigit>BDES2024</AlphaDigit><start_day>29/7/2014</start_day><end_day>28/10/2014</end_day><start_time>10:00</start_time><end_time>13:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry></entries>'
+  var xml = '<?xml version="1.0" encoding="utf-8" ?><entries><entry><uosName>Graduation Studio</uosName><AlphaDigit>MARC5001</AlphaDigit><start_day>1/8/2014</start_day><end_day>31/10/2014</end_day><start_time>13:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>FRI</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Architecture Studio 101</uosName><AlphaDigit>BDES1010</AlphaDigit><start_day>4/3/2014</start_day><end_day>3/6/2014</end_day><start_time>11:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Art Workshop 1</uosName><AlphaDigit>BDES1024</AlphaDigit><start_day>4/3/2014</start_day><end_day>3/6/2014</end_day><start_time>11:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Architecture Studio 201</uosName><AlphaDigit>BDES2010</AlphaDigit><start_day>3/3/2014</start_day><end_day>2/6/2014</end_day><start_time>13:00</start_time><end_time>18:00</end_time><frequency>Weekly                        </frequency><day_of_week>MON</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Architecture Studio 202</uosName><AlphaDigit>BDES2020</AlphaDigit><start_day>28/7/2014</start_day><end_day>20/10/2014</end_day><start_time>13:00</start_time><end_time>17:30</end_time><frequency>Weekly                        </frequency><day_of_week>MON</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Architecture Studio 302</uosName><AlphaDigit>BDES3020</AlphaDigit><start_day>29/7/2014</start_day><end_day>28/10/2014</end_day><start_time>16:00</start_time><end_time>18:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Architectural Communications 3</uosName><AlphaDigit>BDES3012</AlphaDigit><start_day>29/7/2014</start_day><end_day>28/10/2014</end_day><start_time>16:00</start_time><end_time>18:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Art Workshop 2</uosName><AlphaDigit>BDES2024</AlphaDigit><start_day>29/7/2014</start_day><end_day>28/10/2014</end_day><start_time>10:00</start_time><end_time>13:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry></entries>';
+
   var json = $.xml2json(xml);
 
   var noEvent = true,
@@ -37,7 +38,7 @@
 
           var a = moment(sT),
               b = moment(eT),
-              len = b.diff(a, 'hours');
+              len = b.diff(a, 'minutes');
 
 
 
@@ -134,11 +135,11 @@
 
 
       for (var i = 0; i < xmlData.length; i++) {
-          if (xmlData[i].dayOfWeek === days[0]) {
+          if (xmlData[i].dayOfWeek === days[1]) {
               tempArray.push(xmlData[i]);
           }
       };
-      createTimeLineForDay(days[0], tempArray);
+      createTimeLineForDay(days[1], tempArray);
   }
 
 
@@ -150,13 +151,14 @@
 
 
   function createTimeLineForDay(day, events) {
-
-
       console.log(events);
-      var daySegments = 12,
-          startTime = 9,
-          curBlockNo = 0,
-          dayTimeLine = [];
+      var daySegments = 0,
+          daySemgmentsTotal = 720;
+      startTime = 9,
+      curBlockNo = 0,
+      dayTimeLine = [],
+      eventCounter = events.length,
+      events = events, tempEventsArray = events, count = 0;
 
       //Get Starting Time
       var thisweek = moment().startOf('week');
@@ -169,48 +171,85 @@
       //Sort Events by Time
       events = events.sort(compareMilli);
 
+      var TotalEvents = events.length;
+
+
 
       // Create Blocks
       do {
-          var block = {}, currentEvent = null,
-              nextTime = 1;
-          block.starTime = currentTime.get('hours');
+          //Create a block
+          var block = {};
 
-          //make last block the end time
-          if (daySegments != 12) {
-              var a = dayTimeLine[curBlockNo - 1];
-              a.endTime = currentTime.get('hours');
+          if (currentTime === lastTime) {
+              //Update Blocks Time
+              block.startTime = currentTime.format('hh mma')
           }
 
-          for (var x = 0; x < events.length; x++) {
-              //Check to see if an event starts now
-              if (currentTime.isSame(events[x].startTime)) {
-                  currentEvent = events[x];
+
+          var a = getEventAtTime(currentTime);
+
+          nextTime = 1;
+
+          // if event exists at this time
+          if (a.length > 0) {
+
+              //If first time round, and its teh same don't close last block
+              if (!a[0].ev.startTime.isSame(currentTime)) {
+                  block.endTime = currentTime;
+                  dayTimeLine.push(block);
+              } else {
+                  block.startTime = currentTime;
+                  block.ev = a[0];
+                  block.endTime = a[0].ev.endTime;
+                  //go to next time
+                  lastTime = currentTime.add('minutes', 1);
+                  nextTime = a[0].ev.endTime.diff(currentTime, 'minutes');
+                  dayTimeLine.push(block);
+
               }
           }
 
-          if (currentEvent != null) {
-              block.ev = currentEvent;
-              nextTime = currentEvent.length;
+          currentTime.add('minutes', nextTime);
+          daySegments = daySegments + nextTime;
 
-          } else {
-              nextTime = 1;
-          }
-
-
-          // Go Next Time
-          currentTime.add('hours', nextTime);
-          curBlockNo = curBlockNo + 1;
-          daySegments = daySegments - nextTime
-          dayTimeLine.push(block);
 
       }
-      while (daySegments > 0);
+      while (daySegments < daySemgmentsTotal);
       console.log(dayTimeLine);
+
+
+      function nextEvent() {
+          if (tempEventsArray.length > 0) {
+              var ev = tempEventsArray[0];
+              tempEventsArray.splice(0, 1);
+              return true;
+          } else {
+              return false;
+          }
+      }
+
+
+      function getEventAtTime(time) {
+          var evTempArray = [];
+          for (var i = events.length - 1; i >= 0; i--) {
+              if (time.isSame(events[i].startTime)) {
+                  eventsObject = {
+                      eventTime: time,
+                      ev: events[i]
+                  }
+                  evTempArray.push(eventsObject);
+
+              }
+          };
+          return evTempArray;
+      }
 
 
 
   }
+
+
+
 
 
   function createHtmlForDay(dayTimeLine) {
