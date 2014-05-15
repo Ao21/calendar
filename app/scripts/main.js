@@ -148,17 +148,14 @@
 
 
 
-
-
   function createTimeLineForDay(day, events) {
+
+
       console.log(events);
-      var daySegments = 0,
-          daySemgmentsTotal = 720;
-      startTime = 9,
-      curBlockNo = 0,
-      dayTimeLine = [],
-      eventCounter = events.length,
-      events = events, tempEventsArray = events, count = 0;
+      var daySegments = 24,
+          startTime = 9,
+          curBlockNo = 0,
+          dayTimeLine = [];
 
       //Get Starting Time
       var thisweek = moment().startOf('week');
@@ -171,83 +168,48 @@
       //Sort Events by Time
       events = events.sort(compareMilli);
 
-      var TotalEvents = events.length;
-
-
 
       // Create Blocks
       do {
-          //Create a block
-          var block = {};
+          var block = {}, currentEvent = null,
+              nextTime = 30;
+          block.starTime = currentTime.format('hh mm');
 
-          if (currentTime === lastTime) {
-              //Update Blocks Time
-              block.startTime = currentTime.format('hh mma')
+          //make last block the end time
+          if (daySegments != 24) {
+              var a = dayTimeLine[curBlockNo - 1];
+              a.endTime = currentTime.format('hh mm');
           }
 
-
-          var a = getEventAtTime(currentTime);
-
-          nextTime = 1;
-
-          // if event exists at this time
-          if (a.length > 0) {
-
-              //If first time round, and its teh same don't close last block
-              if (!a[0].ev.startTime.isSame(currentTime)) {
-                  block.endTime = currentTime;
-                  dayTimeLine.push(block);
-              } else {
-                  block.startTime = currentTime;
-                  block.ev = a[0];
-                  block.endTime = a[0].ev.endTime;
-                  //go to next time
-                  lastTime = currentTime.add('minutes', 1);
-                  nextTime = a[0].ev.endTime.diff(currentTime, 'minutes');
-                  dayTimeLine.push(block);
-
+          for (var x = 0; x < events.length; x++) {
+              //Check to see if an event starts now
+              if (currentTime.isSame(events[x].startTime)) {
+                  currentEvent = events[x];
               }
           }
 
-          currentTime.add('minutes', nextTime);
-          daySegments = daySegments + nextTime;
+          if (currentEvent != null) {
+              block.ev = currentEvent;
+              nextTime = currentEvent.length;
 
-
-      }
-      while (daySegments < daySemgmentsTotal);
-      console.log(dayTimeLine);
-
-
-      function nextEvent() {
-          if (tempEventsArray.length > 0) {
-              var ev = tempEventsArray[0];
-              tempEventsArray.splice(0, 1);
-              return true;
           } else {
-              return false;
+              nextTime = 30;
           }
+
+
+          // Go Next Time
+          currentTime.add('minutes', nextTime);
+          curBlockNo = curBlockNo + 1;
+          daySegments = daySegments - (nextTime / 30)
+          dayTimeLine.push(block);
+
       }
-
-
-      function getEventAtTime(time) {
-          var evTempArray = [];
-          for (var i = events.length - 1; i >= 0; i--) {
-              if (time.isSame(events[i].startTime)) {
-                  eventsObject = {
-                      eventTime: time,
-                      ev: events[i]
-                  }
-                  evTempArray.push(eventsObject);
-
-              }
-          };
-          return evTempArray;
-      }
+      while (daySegments > 0);
+      console.log(dayTimeLine);
 
 
 
   }
-
 
 
 
