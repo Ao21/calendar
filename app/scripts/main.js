@@ -1,7 +1,8 @@
   console.log('\'Allo \'Allo!');
 
 
-  var xml = '<?xml version="1.0" encoding="utf-8" ?><entries><entry><uosName>Graduation Studio</uosName><AlphaDigit>MARC5001</AlphaDigit><start_day>1/8/2014</start_day><end_day>31/10/2014</end_day><start_time>13:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>FRI</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Architecture Studio 101</uosName><AlphaDigit>BDES1010</AlphaDigit><start_day>4/3/2014</start_day><end_day>3/6/2014</end_day><start_time>11:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Art Workshop 1</uosName><AlphaDigit>BDES1024</AlphaDigit><start_day>4/3/2014</start_day><end_day>3/6/2014</end_day><start_time>11:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Architecture Studio 201</uosName><AlphaDigit>BDES2010</AlphaDigit><start_day>3/3/2014</start_day><end_day>2/6/2014</end_day><start_time>13:00</start_time><end_time>18:00</end_time><frequency>Weekly                        </frequency><day_of_week>MON</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Architecture Studio 202</uosName><AlphaDigit>BDES2020</AlphaDigit><start_day>28/7/2014</start_day><end_day>20/10/2014</end_day><start_time>13:00</start_time><end_time>17:30</end_time><frequency>Weekly                        </frequency><day_of_week>MON</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Architecture Studio 302</uosName><AlphaDigit>BDES3020</AlphaDigit><start_day>29/7/2014</start_day><end_day>28/10/2014</end_day><start_time>16:00</start_time><end_time>18:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Architectural Communications 3</uosName><AlphaDigit>BDES3012</AlphaDigit><start_day>29/7/2014</start_day><end_day>28/10/2014</end_day><start_time>16:00</start_time><end_time>18:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Art Workshop 2</uosName><AlphaDigit>BDES2024</AlphaDigit><start_day>29/7/2014</start_day><end_day>28/10/2014</end_day><start_time>10:00</start_time><end_time>13:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry></entries>';
+  var xml = '<?xml version="1.0" encoding="utf-8" ?><entries><entry><uosName>Graduation Studio</uosName><AlphaDigit>MARC5001</AlphaDigit><start_day>1/1/2014</start_day><end_day>31/10/2014</end_day><start_time>13:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>FRI</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Architecture Studio 101</uosName><AlphaDigit>BDES1010</AlphaDigit><start_day>4/3/2014</start_day><end_day>3/6/2014</end_day><start_time>11:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Art Workshop 1</uosName><AlphaDigit>BDES1024</AlphaDigit><start_day>4/3/2014</start_day><end_day>3/6/2014</end_day><start_time>11:00</start_time><end_time>17:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Architecture Studio 201</uosName><AlphaDigit>BDES2010</AlphaDigit><start_day>3/3/2014</start_day><end_day>2/6/2014</end_day><start_time>13:00</start_time><end_time>18:00</end_time><frequency>Weekly                        </frequency><day_of_week>MON</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Architecture Studio 202</uosName><AlphaDigit>BDES2020</AlphaDigit><start_day>28/7/2014</start_day><end_day>20/10/2014</end_day><start_time>13:00</start_time><end_time>17:30</end_time><frequency>Weekly                        </frequency><day_of_week>MON</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Architecture Studio 302</uosName><AlphaDigit>BDES3020</AlphaDigit><start_day>29/7/2014</start_day><end_day>28/10/2014</end_day><start_time>16:00</start_time><end_time>18:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Architectural Communications 3</uosName><AlphaDigit>BDES3012</AlphaDigit><start_day>29/7/2014</start_day><end_day>28/10/2014</end_day><start_time>16:00</start_time><end_time>18:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry><entry><uosName>Art Workshop 2</uosName><AlphaDigit>BDES2024</AlphaDigit><start_day>29/7/2014</start_day><end_day>28/10/2014</end_day><start_time>10:00</start_time><end_time>13:00</end_time><frequency>Weekly                        </frequency><day_of_week>TUE</day_of_week><venue_name>Wilkinson 262 General Access Laboratory           </venue_name></entry></entries>';
+   //var xml = '<?xml version="1.0" encoding="utf-8" ?><entries><entry><uosName>Graduation Studio</uosName><AlphaDigit>MARC5001</AlphaDigit><start_day>1/1/2014</start_day><end_day>31/10/2014</end_day><start_time>09:00</start_time><end_time>10:55</end_time><frequency>Weekly</frequency><day_of_week>MON</day_of_week><venue_name>Wilkinson 262 General Access Laboratory</venue_name></entry><entry><uosName>Graduation Studio</uosName><AlphaDigit>MARC5001</AlphaDigit><start_day>1/1/2014</start_day><end_day>31/10/2014</end_day><start_time>10:00</start_time><end_time>12:00</end_time><frequency>Weekly</frequency><day_of_week>MON</day_of_week><venue_name>Wilkinson 262 General Access Laboratory</venue_name></entry><entry><uosName>Graduation Studio</uosName><AlphaDigit>MARC5001</AlphaDigit><start_day>1/1/2014</start_day><end_day>31/10/2014</end_day><start_time>13:00</start_time><end_time>14:00</end_time><frequency>Weekly</frequency><day_of_week>MON</day_of_week><venue_name>Wilkinson 262 General Access Laboratory</venue_name></entry><entry><uosName>Graduation Studio</uosName><AlphaDigit>MARC5001</AlphaDigit><start_day>1/1/2014</start_day><end_day>31/10/2014</end_day><start_time>14:00</start_time><end_time>17:00</end_time><frequency>Weekly</frequency><day_of_week>MON</day_of_week><venue_name>Wilkinson 262 General Access Laboratory</venue_name></entry><entry><uosName>Graduation Studio</uosName><AlphaDigit>MARC5001</AlphaDigit><start_day>1/1/2014</start_day><end_day>31/10/2014</end_day><start_time>17:00</start_time><end_time>19:00</end_time><frequency>Weekly</frequency><day_of_week>MON</day_of_week><venue_name>Wilkinson 262 General Access Laboratory</venue_name></entry><entry><uosName>Graduation Studio</uosName><AlphaDigit>MARC5001</AlphaDigit><start_day>1/1/2014</start_day><end_day>31/10/2014</end_day><start_time>19:00</start_time><end_time>21:00</end_time><frequency>Weekly</frequency><day_of_week>MON</day_of_week><venue_name>Wilkinson 262 General Access Laboratory</venue_name></entry></entries>';
 
   var json = $.xml2json(xml);
 
@@ -145,8 +146,6 @@
 
 
 
-
-
   function createTimeLineForDay(day, events, timeDurations) {
 
       console.log(events);
@@ -170,6 +169,7 @@
 
       // Create Blocks
       do {
+          console.log(currentTime.format('hh:mmA'))
           var block = {}, currentEvent = null,
               nextTime = 1;
 
@@ -179,55 +179,51 @@
           var evs = isEventOnAtTime(currentTime);
           //Check if event starts at this time
           if (evs.length > 0) {
+              console.log('event at this time')
               //Make an event and go to end of event
-              block.starTime = currentTime.format('h:mmA');
-              block.endTime = evs[0].endTime.format('h:mmA');
-              dayTimeLine.push(block);
-
-
+              block.starTime = evs[0].startTime.format('ha');
+              block.endTime = evs[0].endTime.format('ha');
+              block.e = evs;
 
               //Go to the end of the event
               addToSegment = (evs[0].length / 5);
               addToMinutes = evs[0].length;
 
-              eventStarted = true;
+              block.segmentCount = addToSegment;
 
+              dayTimeLine.push(block);
+
+              eventStarted = true;
 
           } else {
               //Create Empty block and skip to next Event Time (difference between next event block)
               eventStarted = false;
               //If there's no events left
 
-
           }
 
 
           if (!eventStarted) {
-
               var nextEvent = getNextEvent(currentTime);
 
               //if There's an event left
               if (nextEvent) {
-                  block.starTime = currentTime.format('h:mmA');
-                  block.endTime = nextEvent.startTime.format('h:mmA');
-                  dayTimeLine.push(block);
+                  block.starTime = currentTime.format('ha');
+                  block.endTime = nextEvent.startTime.format('ha');
+
                   var difference = nextEvent.startTime.diff(currentTime, 'minutes');
                   addToSegment = difference / 5;
                   addToMinutes = difference;
-              } else {
-                  block.starTime = currentTime.format('h:mmA');
-                  block.endTime = moment(currentTime).set('hours', 21);
-
+                  block.segmentCount = addToSegment;
                   dayTimeLine.push(block);
+              } else {
+                  block.starTime = currentTime.format('hh:mmA');
+                  block.endTime = moment(currentTime).set('hours', 21).format('ha');
+                  block.segmentCount = daySegments - segmentCount;
                   segmentCount = segmentCount = daySegments;
+                  dayTimeLine.push(block);
               }
           }
-
-
-
-
-
-
 
           function isEventOnAtTime(time) {
               var evArray = [];
@@ -245,11 +241,10 @@
 
           }
 
-
           function getNextEvent(ct) {
               var eA = 0;
-              for (var i = events.length - 1; i >= 0; i--) {
-                  if (events[i].startTime.isAfter(currentTime)) {
+              for (var i = 0; i < events.length; i++) {
+                  if (events[i].startTime.isAfter(ct)) {
                       return events[i];
                   }
               }
@@ -257,28 +252,46 @@
 
           }
           segmentCount = segmentCount + addToSegment;
+          console.log(segmentCount);
           currentTime.add('minutes', addToMinutes);
 
       }
       while (segmentCount < daySegments);
       console.log(dayTimeLine);
-
-
-
-
-
-
+      createHtmlForDay(dayTimeLine);
   }
 
 
-
   function createHtmlForDay(dayTimeLine) {
-      var html = ""
+      var html = "";
+      var elWidth = $('.timeLine').width();
+      var ind = elWidth / 144;
+
       for (var i = 0; i < dayTimeLine.length; i++) {
-          html += '<div class="block">'
-          //html += '<h1>'+dayTimeLine.currentTime.format('H ');+' to '+dayTimeLine.endTime
-          dayTimeLine[i]
+          var segmentSize = "";
+
+          switch (true) {
+              case dayTimeLine[i].segmentCount > 0 && dayTimeLine[i].segmentCount <= 12:
+                  segmentSize = "small";
+                  break;
+              case dayTimeLine[i].segmentCount > 12 && dayTimeLine[i].segmentCount <= 24:
+                  segmentSize = "medium";
+                  break;
+              case dayTimeLine[i].segmentCount > 24:
+                  segmentSize = "large";
+                  break;
+
+          }
+
+          html += '<div class="block ' + segmentSize + '" style="width:' + dayTimeLine[i].segmentCount * ind + 'px">'
+          html += '<h1>' + dayTimeLine[i].starTime + ' to ' + dayTimeLine[i].endTime + '</h1>'
+          if (dayTimeLine[i].e) {
+              html += '<p>' + dayTimeLine[i].e[0].uosName + '</p>'
+          }
+          html += '</div>'
       };
+      console.log(html);
+      $('.timeLine').append(html);
   }
 
 
